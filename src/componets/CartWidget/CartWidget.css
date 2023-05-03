@@ -1,0 +1,18 @@
+i{
+    font-size: 3rem;
+}
+
+
+.carroEstilos{
+    display: flex;
+    align-items: center;
+}
+
+p{
+    background-color: brown;
+    border-radius: 1rem;
+    padding: .25rem;
+    color: antiquewhite;
+    font-weight: 300;
+
+}
