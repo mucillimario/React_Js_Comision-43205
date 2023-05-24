@@ -24,19 +24,6 @@ function App() {
   );
 }
 
-// function App() {
-//   return (
-
-//     <div className="App">
-//       <Header/>      
-//       <NavBar/>
-//       <ItemListContainer greeting={`Bienvenidos a la web de lego realizada en React Js`} />
-//       <ItemDetailContainer/>
-//       </div>
-//   );
-// }
-
-
 export default App;
 
 

@@ -21,28 +21,10 @@ const ItemListContainer = ({ greeting }) => {
   console.log(idCategoria)
   return (
     <>
-      <h5 className="tituloGreeting">{greeting}</h5>
+      {/* <h5 className="tituloGreeting">{greeting}</h5> */}
       <ItemList productos={productos} />
     </>
   )
 }
 
 export default ItemListContainer
-
-
-// const ItemListContainer = ({ greeting }) => {
-//   const [productos, setProductos] = useState([]);
-
-//   useEffect(() => {
-//     getProductos()
-//       .then(respuesta => setProductos(respuesta))
-//       .catch(error => console.log(error))
-//   }, [])
-
-//   return (
-//     <>
-//     <h5 className="tituloGreeting">{greeting}</h5>
-//     <ItemList productos={productos}/>
-//     </>
-//   )
-// }

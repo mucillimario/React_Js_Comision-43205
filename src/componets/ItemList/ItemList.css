@@ -1,4 +1,7 @@
-.contenedorProductos {
+.contenedorProductosEntrega {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(100,100,100    );
+
 }

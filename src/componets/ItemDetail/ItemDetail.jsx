@@ -2,12 +2,20 @@ import './ItemDetail.css'
 
 const ItemDetail = ({id, nombre, precio, img, detalle}) => {
   return (
-    <div className='contenedorItem'>
-        <h2>Nombre: {nombre} </h2>
-        <h3>Precio: {precio} </h3>
-        <h3>ID: {id} </h3>
-        <p>Decripción: {detalle} </p>
-        <img src= {img} alt={nombre} />
+    
+    <div className='contenedorItemDetalle'>
+    <div>
+    <img className="detalleImg"src= {img} alt={nombre} />
+    </div>
+    <div className="detalleTexto">
+    <h2 className="nombreDetalle"> {nombre} </h2>
+    <h3 className="skuDetalle">Sku: {id} </h3>
+        <h3 className="precioDetalle">$: {precio} </h3>
+        <p className="detalleDetalle">{detalle} </p>
+
+    </div>
+
+
     </div>
   )
 }

@@ -1,0 +1,15 @@
+/* 1 rem = 10 px */
+html {
+    font-size: 62.5%;
+  }
+  
+  /* Reseteo de espacios a los lados y hacia adentro de las cajas*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+

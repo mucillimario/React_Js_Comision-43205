@@ -7,13 +7,14 @@ import './NavBar.css'
 const NavBar = () => {
   return (
     <Navbar className="NavBar">
-        <Nav className="Nav-2">
-          <NavLink to={`/categoria/1`} className="colorTexto">Clasicos</NavLink>
-          <NavLink to={`/categoria/2`} className="colorTexto">Arquitectura</NavLink>
-          <NavLink to={`/categoria/3`} className="colorTexto">Mario Bross</NavLink>
-        </Nav>
-  </Navbar>
-);
+      <Nav className="Nav-2">
+        <NavLink to={`/categoria/1`} className="colorTextoNav">Clasicos</NavLink>
+        <NavLink to={`/categoria/2`} className="colorTextoNav">Arquitectura</NavLink>
+        <NavLink to={`/categoria/3`} className="colorTextoNav">Mario Bross</NavLink>
+      </Nav>
+        {/* <h5 class="tituloGreeting">Bienvenidos a la web de lego realizada en React Js</h5> */}
+    </Navbar>
+  );
 }
 
 export default NavBar

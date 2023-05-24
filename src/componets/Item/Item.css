@@ -1,8 +1,8 @@
 .cardProducto {
-    background-color: #bcbd8b;
+    background-color: #fafafa;
     border-radius: 10px;
-    width: 15rem;
-    padding: 1rem;
+    width: 25rem;
+    padding: 2rem 1rem 2rem 1rem;
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -10,15 +10,80 @@
 }
 
 .imgProducto {
-    width: 150px;
+    padding-bottom: 1rem;
+    height: 200px;
+    width: 100%;
     object-fit: contain;
 }
 
-.btnProducto {
-    background-color: #373d20;
-    color: white;
-    font-size: 1.2rem;
-    width: 8rem;
-    border-radius: 10px;
-    border: none;
+.cardDatosTodos {
+    width: 100%;
+}
+
+.nombre {
+    color: #383838;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0rem;
+
+}
+
+.cardDatosOFF {
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+}
+
+.precioOFF {
+    color: rgb(239, 12, 57);
+    text-decoration-line: line-through;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.off {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    color: darkgreen
+}
+
+.precio {
+    color: #383838;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sku {
+    font-style: oblique;
+    text-align: right;
+    height: 1rem;
+
+}
+
+.CarDatosVerMas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.verMas{
+    background-color: rgb(209, 209, 209);
+    padding: 0 1rem 0 1rem;
+    width: 75%;
+    text-align: center;
+    color: #383838;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+.verMas:hover{
+    background-color: #a4a4a4;
+    color: #000000;
+    font-size: 1.25rem;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
