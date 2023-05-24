@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget';
 import logo from "../../assets/logo-lego.png";
-import { Link } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
@@ -12,9 +12,9 @@ const Header = () => {
     <Navbar bg="warning" expand="lg">
     <Container>
       <Navbar.Brand>
-        {/* <Link to ={"/"}> */}
+      <Link to ={"/"}>
       <img src={logo} className="logo" alt="logo de lego" />
-      {/* </Link> */}
+     </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

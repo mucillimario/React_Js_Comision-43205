@@ -18,6 +18,7 @@ const ItemListContainer = ({ greeting }) => {
       .catch(error => console.error(error))
   }, [idCategoria])
 
+  console.log(idCategoria)
   return (
     <>
       <h5 className="tituloGreeting">{greeting}</h5>

@@ -37,7 +37,6 @@ export const getProductosPorCategoria = (idCategoria) => {
         setTimeout( () => {
             const productosCategoria = productos.filter(prod => prod.idCat === idCategoria);
             resolve(productosCategoria);
-
         },2000 )
     })
 }
