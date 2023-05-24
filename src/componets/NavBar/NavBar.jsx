@@ -1,29 +1,17 @@
-
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import CartWidget from '../CartWidget/CartWidget';
-import logo from "../../assets/logo-lego.png";
+import { NavLink, Link } from 'react-bootstrap';
+
 import './NavBar.css'
 
 const NavBar = () => {
   return (
-    <Navbar bg="warning" expand="lg">
-    <Container>
-      <Navbar.Brand>
-
-      <img src={logo} className="logo" alt="Vite logo" />
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link className="colorTexto">COMPRAR</Nav.Link>
-          <Nav.Link className="colorTexto">DESCUBRIR</Nav.Link>
-          <Nav.Link className="colorTexto">AYUDA</Nav.Link>
+    <Navbar className="NavBar">
+        <Nav className="Nav-2">
+          <NavLink to={`/categoria/1`} className="colorTexto">Clasicos</NavLink>
+          <NavLink to={`/categoria/2`} className="colorTexto">Arquitectura</NavLink>
+          <NavLink to={`/categoria/3`} className="colorTexto">Mario Bross</NavLink>
         </Nav>
-        <CartWidget/>
-      </Navbar.Collapse>
-          </Container>
   </Navbar>
 );
 }

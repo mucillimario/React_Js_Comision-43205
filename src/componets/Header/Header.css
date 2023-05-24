@@ -1,19 +1,11 @@
-.NavBar {
-    background-color: rgb(157, 214, 92);
-    display: flex;
-    justify-content: center;
-}
-
-.nav-link{
-    margin: .5rem
-}
-
 .colorTexto {
     color:black;
     cursor: pointer;
     border-bottom: 3px solid transparent;
     height: 33.4px;
-    }
+    
+
+}
 
 .colorTexto:hover{
     color:black;
@@ -23,4 +15,8 @@
 .navbar-expand-lg .navbar-nav .nav-link{
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.logo{
+    width: 3vw;
 }
