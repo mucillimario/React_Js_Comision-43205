@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 1rem 1rem 1rem  rgb(60, 60, 60);
 }
 
 .imgProducto {
@@ -14,6 +15,8 @@
     height: 200px;
     width: 100%;
     object-fit: contain;
+    border-bottom:solid 0.2rem rgba(56, 56, 56, 0.5);
+    
 }
 
 .cardDatosTodos {
@@ -24,7 +27,7 @@
     color: #383838;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 0rem;
+    margin: 2rem;
 
 }
 
@@ -55,7 +58,7 @@
     font-weight: bold;
 }
 
-.sku {
+.sku_stock {
     font-style: oblique;
     text-align: right;
     height: 1rem;
@@ -70,19 +73,19 @@
 }
 
 .verMas{
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(24, 98, 182);
     padding: 0 1rem 0 1rem;
     width: 75%;
     text-align: center;
-    color: #383838;
+    color: #fafafa;
     font-size: 1.25rem;
     text-decoration: none;
     border-radius: 1rem;
 }
 
 .verMas:hover{
-    background-color: #a4a4a4;
-    color: #000000;
+    background-color: #0a195e;
+    color: #fafafa;
     font-size: 1.25rem;
     text-decoration: none;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);

@@ -1,27 +1,34 @@
-import { useState, useEffect } from 'react'
+ import { useState, useEffect } from 'react'
 import ItemList from '../ItemList/ItemList'
-import { getProductos, getProductosPorCategoria } from '../../asyncmock'
+
 import { useParams } from 'react-router-dom'
-import './ItemListContainer.css'
+
+//Importamos funciones de firebase: 
+import { collection, getDocs, where, query } from 'firebase/firestore';
+import { db_firebase } from '../../services/config';
 
 const ItemListContainer = ({ greeting }) => {
   const [productos, setProductos] = useState([]);
 
   const { idCategoria } = useParams();
 
-  useEffect(() => {
+  useEffect( () => {
+    const misProductos = idCategoria ? query(collection(db_firebase, "inventarioLego"), where("idCat", "==", idCategoria)) : collection(db_firebase, "inventarioLego");
 
-    const funcionProductos = idCategoria ? getProductosPorCategoria : getProductos;
-
-    funcionProductos(idCategoria)
-      .then(res => setProductos(res))
-      .catch(error => console.error(error))
+    getDocs(misProductos)
+      .then(res => {
+        const nuevosProductos = res.docs.map(doc => {
+          const data = doc.data()
+          return {id: doc.id, ...data}
+        })
+        setProductos(nuevosProductos);
+      })
+      .catch(error => console.log(error))
   }, [idCategoria])
 
-  console.log(idCategoria)
   return (
     <>
-      {/* <h5 className="tituloGreeting">{greeting}</h5> */}
+      <h2> {greeting} </h2>
       <ItemList productos={productos} />
     </>
   )

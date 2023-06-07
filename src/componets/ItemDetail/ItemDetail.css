@@ -29,7 +29,7 @@
     font-weight: bold;
 }
 
-.skuDetalle {
+.sku_stockDetalle {
     font-style: oblique;
     text-align: right;
     height: 1rem;
@@ -50,4 +50,8 @@
     font-size: 1.5rem;
 
 
+}
+
+.contadorA{
+    background-color:hsla(0, 87%, 40%, 0.5)
 }
