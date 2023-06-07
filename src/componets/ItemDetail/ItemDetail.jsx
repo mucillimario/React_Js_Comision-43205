@@ -25,7 +25,7 @@ const ItemDetail = ({ id, sku, nombre, precio, img, stock, detalle }) => {
     const item = { id, nombre, precio };
     agregarProducto(item, cantidad);
   }
-console.log(item)
+
   return (
 
     <div className='contenedorItemDetalle'>

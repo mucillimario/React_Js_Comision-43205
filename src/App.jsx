@@ -11,12 +11,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import { Link, NavLik } from "react-router-dom";
 // import ItemList from './componets/ItemList/ItemList';
 import Checkout from './componets/Checkout/Checkout';
+import { CarritoProvider } from './context/CarritoContext';
 
 
 
 function App() {
   return (
     <>
+      <CarritoProvider>
       <BrowserRouter>
         <Header />
         <NavBar />
@@ -27,6 +29,7 @@ function App() {
           <Route path='/checkout' element={ <Checkout/>} />
         </Routes>
       </BrowserRouter>
+      </CarritoProvider>
     </>
   );
 }
