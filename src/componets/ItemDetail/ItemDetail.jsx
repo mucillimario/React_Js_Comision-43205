@@ -54,6 +54,12 @@ const ArrowBackNavegador= () => {
       <i class="bi bi-x-square-fill"></i>
       <i class="bi bi-trash3"></i>
       <i class="bi bi-trash3-fill"></i>
+      <i class="bi bi-bag-plus"></i>
+      <i class="bi bi-bag-x"></i>
+      <i class="bi bi-check-lg"></i>
+      <i class="bi bi-check2-circle"></i>
+      <i class="bi bi-check-circle"></i>
+      <i class="bi bi-check-circle-fill"></i>
 
       </button>
 
