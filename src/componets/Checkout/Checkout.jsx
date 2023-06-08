@@ -15,6 +15,8 @@ const Checkout = () => {
     const [error, setError] = useState("");
     const [ordenId, setOrdenId] = useState("");
 
+
+
     //funciones y validaciones: 
 
     const manejadorFormulario = (event) => {
@@ -58,11 +60,17 @@ const Checkout = () => {
                 setError("Se produjo un error al crear la orden, vuelva prontus");
             })
 
+            setNombre("");
+            setApellido("");
+            setTelefono("");
+            setEmail("");
+            setEmailConfirmacion("");
+            setError("");
+            setOrdenId("");
 
     }
 
     return (
-
 
         <div>
             <h2>Checkout</h2>
@@ -105,6 +113,7 @@ const Checkout = () => {
 
                 {error && <p style={{ color: "red" }}> {error} </p>}
                 <button type="submit"> Finalizar Compra </button>
+
             </form>
             {
                 ordenId && (
