@@ -41,9 +41,6 @@ const ArrowBackNavegador= () => {
 
     <div className='contenedorItemDetalle'>
       <div>
-
-
-
       <button onClick={ArrowBackNavegador}>
       <i class="bi bi-0-circle-fill"></i>
       <i class="bi bi-cart3" ></i>
