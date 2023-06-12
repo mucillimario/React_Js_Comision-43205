@@ -11,16 +11,18 @@ const Item = ({ id, sku, nombre,precioOFF, precio, img, stock }) => {
       <div className="cardDatosTodos">
         <div className="cardDatosTitulo">
           <h3 className="nombre">{nombre} </h3>
-          <p className="sku_stock">Sku: {sku} </p>
-          <p className="sku_stock">Disponibles: {stock} </p>
+
+          <p className="sku_stock">Stock: {stock} unidades </p>
         </div>
         <div className="cardDatosOFF">
         <p className="precioOFF">$ {precioOFF} </p>         
         <p className="off"> %25</p>
         </div>
         <p className="precio">$ {precio} </p>
+        <p className="sku_stock">Sku: {sku} </p>
         <div className="CarDatosVerMas">
-          <Link className="verMas"to={`/item/${id}`}> Ver Detalles </Link>
+          <Link className="verMas"to={`/item/${id}`}> Ver detalles </Link>
+
         </div>
       </div>
     </div>

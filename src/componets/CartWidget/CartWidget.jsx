@@ -10,9 +10,8 @@ const CartWidget = () => {
     <div className="carroEstilos">
       <Link style={{textDecoration:"none"}} to='/cart'>
       <i class="bi bi-cart3"></i>
-      
         {
-          cantidadTotal > 0 && <strong className='itemsIndicador'> {cantidadTotal} </strong>
+          cantidadTotal > 0 && <strong className='notificacion'> {cantidadTotal} </strong>
         }
       </Link>
     </div>

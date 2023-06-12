@@ -33,47 +33,44 @@ const ItemDetail = ({ id, sku, nombre, precio, img, stock, detalle }) => {
 
   const navigate = useNavigate();
 
-const ArrowBackNavegador= () => {
-  navigate(-1)
-  
-}
+  const ArrowBackNavegador = () => {
+    navigate(-1)
+
+  }
   return (
 
     <div className='contenedorItemDetalle'>
-      <div>
-      <button onClick={ArrowBackNavegador}>
-      <i class="bi bi-0-circle-fill"></i>
-      <i class="bi bi-cart3" ></i>
-      <i class="bi bi-cart3"></i>
-      <i class="bi bi-cart3"></i>
-      <i class="bi bi-arrow-left-circle-fill"></i>
-      <i class="bi bi-arrow-left-circle"></i>
-      <i class="bi bi-x-square-fill"></i>
-      <i class="bi bi-trash3"></i>
-      <i class="bi bi-trash3-fill"></i>
-      <i class="bi bi-bag-plus"></i>
-      <i class="bi bi-bag-x"></i>
-      <i class="bi bi-check-lg"></i>
-      <i class="bi bi-check2-circle"></i>
-      <i class="bi bi-check-circle"></i>
-      <i class="bi bi-check-circle-fill"></i>
-
-      </button>
-
-
-        <img className="detalleImg" src={img} alt={nombre} />
+      <div className='volver_img'>
+            <button className="flechaVolver" onClick={ArrowBackNavegador}>
+              <i class="bi bi-arrow-left-circle"></i>
+            </button>
+            <img className="detalleImg" src={img} alt={nombre} />
       </div>
+
       <div className="detalleTexto">
-        <h2 className="nombreDetalle"> {nombre} </h2>
-        <h3 className="sku_stockDetalle">Sku: {sku} </h3>
-        <p className="sku_stockDetalle">Disponibles: {stock} </p>
-        <h3 className="precioDetalle">$: {precio} </h3>
-        <p className="detalleDetalle">{detalle} </p>
-        {agregarCantidad > 0 ? (<Link to="/cart"> Terminar Compra </Link>)
-          : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)}
-        <br />
-        <a href="/"> Quiero ver otros productos, no quiero este </a>
-        <a href="/"> volver a la categoria </a>
+          <h2 className="nombreDetalle"> {nombre} </h2>
+          <p className="sku_stockDetalle">Disponibles: {stock} </p>
+          <h3 className="precioDetalle">$: {precio} </h3>
+          <p className="detalleDetalle">{detalle} </p>
+          <h3 className="sku_stockDetalle">Sku: {sku} </h3>
+          {agregarCantidad > 0 ? (<Link to="/cart"> Terminar Compra </Link>)
+            : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)}
+          {/* <br />
+          <a href="/"> Quiero ver otros productos, no quiero este </a>
+          <a href="/"> volver a la categoria </a> */}
+
+        {/* <i class="bi bi-cart3" ></i>
+        <i class="bi bi-arrow-left-circle-fill"></i>
+        <i class="bi bi-arrow-left-circle"></i>
+        <i class="bi bi-x-square-fill"></i>
+        <i class="bi bi-trash3"></i>
+        <i class="bi bi-trash3-fill"></i>
+
+        <i class="bi bi-bag-x"></i>
+        <i class="bi bi-check-lg"></i>
+        <i class="bi bi-check2-circle"></i>
+        <i class="bi bi-check-circle"></i>
+        <i class="bi bi-check-circle-fill"></i>  */}
 
       </div>
     </div>

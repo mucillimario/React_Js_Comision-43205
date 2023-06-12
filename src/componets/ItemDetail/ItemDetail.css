@@ -2,11 +2,30 @@
     margin: 3rem;
     display: flex;
     justify-content: center;
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    box-shadow: 1rem 1rem 1rem rgb(60, 60, 60);
+}
+
+.volver_img {
+    background-color: aqua;
+    /* display: flex; */
+
 
 }
 
-.detalleImg {
+.flechaVolver{
+    border:none;
+    height: 4rem;
+}
 
+i {
+    font-size: 4rem;
+}
+
+
+.detalleImg {
     height: 300px;
     object-fit: contain;
 }
@@ -14,12 +33,10 @@
 .detalleTexto {
     text-align: center;
     width: 40%;
-}
+    background-color: chocolate;
+    margin: 0rem 2rem;
+} 
 
-
-.cardDatosTodos {
-    width: 100%;
-}
 
 .nombreDetalle {
     color: #383838;
@@ -46,18 +63,9 @@
 
 .detalleDetalle {
     color: #383838;
-
     font-size: 1.5rem;
 
 
-}
-
-.contadorA{
-    background-color:hsla(0, 87%, 40%, 0.5)
-}
-
-i{
-    font-size: 5rem;
 }
 
 

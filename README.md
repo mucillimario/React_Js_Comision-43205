@@ -1,5 +1,14 @@
 # Tienda Lego - Web Concept
+Cree una tienda lego en la que se puede simular una compra de produdctos de 3 categorias:
+- Clásicos
+- Aquitectura
+- Mario Bross
 
+Todos productos estan cargados en nuestra base de datos de firebase.
+
+Todo está simulado con un descuentos del 25% off , con la posibilidad de agregar al carrito la cantidad necesaria, muestra el el carro y simula la compra posterior a cargar los datos obligatorios en el formulario.
+
+Web Concept para practicar sobre el framework React
 
 
 ## Tecnologías utilizadas

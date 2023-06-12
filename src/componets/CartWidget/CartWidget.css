@@ -1,18 +1,11 @@
 i{
     font-size: 3rem;
-}
-
-
-.carroEstilos{
-    display: flex;
-    align-items: center;
+    color:black
 }
 
 .notificacion{
     background-color: brown;
     border-radius: 1rem;
-    padding: .25rem;
+    padding: .5rem .5rem;
     color: antiquewhite;
-    font-weight: 300;
-
 }

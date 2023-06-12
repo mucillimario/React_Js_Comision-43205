@@ -4,9 +4,38 @@
     justify-content: center;
 }
 
-button{
-    background-color: rgb(255, 255, 255);
-    border: rgb(255, 0, 0) 3px solid;
+.btnContadores{
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+
+}
+
+.agregar{
+display: flex;
+justify-content: center;
+}
+
+.btnAccion {
+    display: flex;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
     padding: 0 2rem 0 2rem;
+    background-color: aqua;
+
+
+}
+.bi-dash-square-fill, .bi-plus-square-fill{
+    margin: 1rem;
+}
+
+.bi-dash-square-fill:hover, .bi-plus-square-fill:hover{
+    color: blue;
+
+}
+
+.bi-bag-plus{
+    font-size: 2rem;
+    padding-right: 1rem;
 
 }
