@@ -35,7 +35,10 @@ const ItemDetail = ({ id, sku, nombre, precio, img, stock, detalle }) => {
 
   const ArrowBackNavegador = () => {
     navigate(-1)
+  }
 
+  const ArrowBackSeguirComprando = () => {
+    navigate(-0)
   }
   return (
 
@@ -49,14 +52,21 @@ const ItemDetail = ({ id, sku, nombre, precio, img, stock, detalle }) => {
 
       <div className="detalleTexto">
           <h2 className="nombreDetalle"> {nombre} </h2>
+
           <p className="sku_stockDetalle">Disponibles: {stock} </p>
           <h3 className="precioDetalle">$: {precio} </h3>
-          <p className="detalleDetalle">{detalle} </p>
+          <h className="detalleDetalle">{detalle} </h>
           <h3 className="sku_stockDetalle">Sku: {sku} </h3>
-          {agregarCantidad > 0 ? (<Link to="/cart"> Terminar Compra </Link>)
+
+          {agregarCantidad > 0 ? (<Link className="btnInformativo btnTerminar" to="/cart"> 
+          {/* <button className="flechaVolver" onClick={ArrowBackSeguirComprando}>
+              <p>Seguir comprando</p>
+            </button>  */}
+            Terminar Compra 
+            </Link>)
             : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)}
-          {/* <br />
-          <a href="/"> Quiero ver otros productos, no quiero este </a>
+          <br />
+          {/* <a href="/"> Quiero ver otros productos, no quiero este </a>
           <a href="/"> volver a la categoria </a> */}
 
         {/* <i class="bi bi-cart3" ></i>
@@ -65,12 +75,12 @@ const ItemDetail = ({ id, sku, nombre, precio, img, stock, detalle }) => {
         <i class="bi bi-x-square-fill"></i>
         <i class="bi bi-trash3"></i>
         <i class="bi bi-trash3-fill"></i>
-
+        <i class="bi bi-bag-plus"></i>
         <i class="bi bi-bag-x"></i>
         <i class="bi bi-check-lg"></i>
         <i class="bi bi-check2-circle"></i>
         <i class="bi bi-check-circle"></i>
-        <i class="bi bi-check-circle-fill"></i>  */}
+        <i class="bi bi-check-circle-fill"></i> */}
 
       </div>
     </div>

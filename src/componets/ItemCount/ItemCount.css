@@ -1,41 +1,40 @@
-.contadores{
+.div_contadores {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btnContadores{
-    background-color:rgba(0, 0, 0, 0);
+.btnContadores {
+    background-color: rgba(0, 0, 0, 0);
     border: none;
 
 }
 
-.agregar{
-display: flex;
-justify-content: center;
-}
-
-.btnAccion {
-    display: flex;
-    align-items: center;
-    background-color:rgba(0, 0, 0, 0);
-    border: none;
-    padding: 0 2rem 0 2rem;
-    background-color: aqua;
-
-
-}
-.bi-dash-square-fill, .bi-plus-square-fill{
+.bi-dash-square-fill,
+.bi-plus-square-fill {
     margin: 1rem;
 }
 
-.bi-dash-square-fill:hover, .bi-plus-square-fill:hover{
-    color: blue;
-
+.bi-dash-square-fill:hover,
+.bi-plus-square-fill:hover {
+    color: var(--colorBtnInfomativoHover)
 }
 
-.bi-bag-plus{
+
+.div_agregar {
+    display: flex;
+    justify-content: center;
+}
+
+.btnAgregarCarro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.bi-bag-plus {
     font-size: 2rem;
     padding-right: 1rem;
-
+    color: antiquewhite
 }

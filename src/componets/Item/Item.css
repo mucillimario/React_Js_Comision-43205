@@ -1,5 +1,15 @@
-.cardProducto {
-    background-color: #fafafa;
+:root{
+    --colorFondoCard: #fafafa;
+    --colorTexto: #1f1f1f;
+    --colorPrecioViejo: #c61e1e;
+    --colorPrecioDescuento: green;
+    --colorBtnInformativo: #0b55bc;
+    --colorBtnInfomativoHover: #081586;
+
+ }
+ 
+ .cardProducto {
+    background-color: var(--colorFondoCard);
     border-radius: 10px;
     width: 25rem;
     padding: 2rem 1.5rem 2rem 1.5rem;
@@ -24,7 +34,7 @@
 }
 
 .nombre {
-    color: #383838;
+    color: var(--colorTexto);
     font-weight: 600;
     text-align: center;
     margin: 1rem .5rem;
@@ -36,7 +46,7 @@
 }
 
 .precioOFF {
-    color: rgb(239, 12, 57);
+    color: var(--colorPrecioViejo);
     text-decoration-line: line-through;
     font-size: 2rem;
     text-align: center;
@@ -44,15 +54,16 @@
 }
 
 .off {
+    color: var(--colorPrecioDescuento);
     font-size: 2rem;
     font-weight: bold;
     padding-left: 1rem;
-    color: darkgreen;
+
     margin-bottom: 0rem;
 }
 
 .precio {
-    color: #383838;
+    color: var(--colorTexto);
     font-size: 3.5rem;
     text-align: center;
     font-weight: bold;
@@ -63,6 +74,7 @@
     font-style: oblique;
     text-align: right;
     margin-bottom: 0rem;
+    color: var(--colorTexto);
 }
 
 .CarDatosVerMas {
@@ -73,8 +85,8 @@
 
 }
 
-.verMas {
-    background-color: rgb(24, 98, 182);
+.btnInformativo {
+    background-color: var(--colorBtnInformativo);
     width: 75%;
     text-align: center;
     color: #fafafa;
@@ -83,8 +95,8 @@
     border-radius: 1rem;
 }
 
-.verMas:hover {
-    background-color: #0a195e;
+.btnInformativo:hover {
+    background-color: var(--colorBtnInfomativoHover);
     color: #fafafa;
     font-size: 1.25rem;
     text-decoration: none;
