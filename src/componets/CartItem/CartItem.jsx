@@ -12,15 +12,21 @@ const CartItem = ({ item, cantidad }) => {
           <img className="img_cart" src={item.img} alt="" />
         </div>
         <div className="cartItemDatos">
+          <div className="hola">
           <h4> {item.nombre} </h4>
-          <div className="cartItemCantPrecio">
           <p>Cantidad: {cantidad} </p>
           <p>Precio: {item.precio} </p>
           </div>
-          <button className="miBtn" onClick={() => eliminarProducto(item.id)}> Eliminar </button>
+
+<div className="hola2">
+<button className="miBtn" onClick={() => eliminarProducto(item.id)}> Eliminar </button>
+</div>
+        
+          </div>
+       
         </div>
 
-      </div>
+
 
   
 )

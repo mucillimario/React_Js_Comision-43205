@@ -1,6 +1,6 @@
 .contenedorCartDetalle {
     margin: 3rem;
-    background-color: #ae1212;
+    background-color: #7d2424;
     border-radius: 10px;
     padding: 2rem 1.5rem 2rem 1.5rem;
     box-shadow: 1rem 1rem 1rem rgb(60, 60, 60);
@@ -14,16 +14,15 @@
     background-color: aqua;
 }
 
-.hayProductos{
+.hayProductos {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: s;
+    justify-content: space-around;
     background-color: rgb(185, 199, 58);
     width: 80%;
-
 }
 
 .carritoTotal{
     background-color: rgb(104, 104, 104);
-    width:
-}
+   }
