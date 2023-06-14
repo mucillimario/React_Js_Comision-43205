@@ -1,2 +1,28 @@
+  .contenedorCartItem{
+    margin: 1rem;
+    background-color: #bcffb1;
+    border-radius: 10px;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    box-shadow: 1rem 1rem 1rem rgb(60, 60, 60);
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  align-items: center;    
+
+}
+
+.cartItemImg{
+  width: 21rem;
+background-color: coral;
+align-items: center;}
+
 .img_cart{
-  height: 20rem}
+  width: 20rem;
+}
+
+.cartItemDatos{
+  width: 50%;
+
+  background-color: blueviolet;
+}
