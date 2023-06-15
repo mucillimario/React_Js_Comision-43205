@@ -7,7 +7,7 @@ import { getFirestore } from "firebase/firestore";
 
 //acá está la la key de la api de nuestra base de firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyAEy1wN17m41lYfe5aiF8IR2sfm8QEMeOI",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "firts-ecommerce.firebaseapp.com",
     projectId: "firts-ecommerce",
     storageBucket: "firts-ecommerce.appspot.com",

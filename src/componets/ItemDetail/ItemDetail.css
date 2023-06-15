@@ -26,6 +26,13 @@
     text-align: center;
     width: 40%;
     margin: 0rem 2rem;
+
+
+}
+
+.Terminar{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -60,18 +67,14 @@
 
 }
 
-button {
-    background-color: rgba(0, 0, 0, 0);
-    border: brown 3px solid;
+.bi-eye{
+font-size: 2rem;
+    padding-right: 1rem;
+    color: antiquewhite;
 }
-
-.btnTerminar{
-padding: 1rem 2rem;
-}
-
 
 .itemDetailBotones{
     margin-top: 2rem;
-    background-color: rgb(206, 204, 219);
-
+    display: flex;
+    justify-content: center;
 }

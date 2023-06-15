@@ -6,3 +6,36 @@
 font-family: 'PT Sans Caption', sans-serif;
 }
 
+
+.btnEstiloAll {
+  background-color: var(--colorbtnEstiloAll);
+  width: 75%;
+  
+  color: #fafafa;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  /* border: brown 3px solid; */
+  border: none;
+}
+
+
+.btnEstiloAll:hover {
+  background-color: var(--colorbtnEstiloAllHover);
+  color: #fafafa;
+  font-size: 1.25rem;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+

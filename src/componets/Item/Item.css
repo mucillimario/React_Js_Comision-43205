@@ -3,8 +3,8 @@
     --colorTexto: #1f1f1f;
     --colorPrecioViejo: #c61e1e;
     --colorPrecioDescuento: green;
-    --colorBtnInformativo: #0b55bc;
-    --colorBtnInfomativoHover: #081586;
+    --colorbtnEstiloAll: #0b55bc;
+    --colorbtnEstiloAllHover: #081586;
 
 }
 
@@ -83,22 +83,4 @@
     justify-content: center;
     margin-top: 1rem;
 
-}
-
-.btnInformativo {
-    background-color: var(--colorBtnInformativo);
-    width: 75%;
-    text-align: center;
-    color: #fafafa;
-    font-size: 1.25rem;
-    text-decoration: none;
-    border-radius: 1rem;
-}
-
-.btnInformativo:hover {
-    background-color: var(--colorBtnInfomativoHover);
-    color: #fafafa;
-    font-size: 1.25rem;
-    text-decoration: none;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }

@@ -76,7 +76,7 @@ setOrdenId("");
 return(
 
 <div>
-<h2>Checkout</h2>
+<h2>Orden de Compra</h2>
 <form onSubmit={manejadorFormulario} className="formulario">
 {carrito.map(producto => (
 <div key={producto.item.id}>

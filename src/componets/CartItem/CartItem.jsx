@@ -12,28 +12,16 @@ const CartItem = ({ item, cantidad }) => {
           <img className="img_cart" src={item.img} alt="" />
         </div>
         <div className="cartItemDatos">
-          <div className="hola">
-          <h4> {item.nombre} </h4>
-          <p>Cantidad: {cantidad} </p>
-          <p>Precio: $ {item.precio} </p>
-          <p>SubTotal: $ {item.precio * cantidad} </p>
+          <div>
+          <h1 className="cartItemBold" > {item.nombre} </h1>
+          <h4>Cantidad: {cantidad} </h4>
+          <h4>Precio: $ {item.precio} </h4>
+          <h4 className="cartItemBold">SubTotal: $ {item.precio * cantidad} </h4>
           </div>
 
-<div className="hola2">
-<button className="miBtn" onClick={() => eliminarProducto(item.id)}>              <i class="bi bi-x-square-fill"></i>  </button>
+<div className="cartItemBtnEliminar">
+<button onClick={() => eliminarProducto(item.id)}>              <i class="bi bi-x-square"></i>  </button>
                    
-{/* <i class="bi bi-cart3" ></i>
-        <i class="bi bi-arrow-left-circle-fill"></i>
-        <i class="bi bi-arrow-left-circle"></i>
-
-        <i class="bi bi-trash3"></i>
-        <i class="bi bi-trash3-fill"></i>
-        <i class="bi bi-bag-plus"></i>
-        
-
-        <i class="bi bi-check2-circle"></i>
-        <i class="bi bi-check-circle"></i>
-        <i class="bi bi-check-circle-fill"></i> */}
 </div>
         
           </div>

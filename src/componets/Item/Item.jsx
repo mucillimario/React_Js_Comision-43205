@@ -21,7 +21,7 @@ const Item = ({ id, sku, nombre,precioOFF, precio, img, stock }) => {
         <p className="precio">$ {precio} </p>
         <p className="sku_stock">Sku: {sku} </p>
         <div className="CarDatosVerMas">
-          <Link className="btnInformativo"to={`/item/${id}`}> Ver detalles </Link>
+          <Link className="btnEstiloAll"to={`/item/${id}`}> Ver detalles </Link>
 
         </div>
       </div>

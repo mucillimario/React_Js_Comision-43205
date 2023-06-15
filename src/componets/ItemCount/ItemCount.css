@@ -10,14 +10,14 @@
 
 }
 
-.bi-dash-square-fill,
-.bi-plus-square-fill {
+.bi-dash-square,
+.bi-plus-square {
     margin: 1rem;
 }
 
-.bi-dash-square-fill:hover,
-.bi-plus-square-fill:hover {
-    color: var(--colorBtnInfomativoHover)
+.bi-dash-square:hover,
+.bi-plus-square:hover {
+    color: var(--colorbtnEstiloAllHover)
 }
 
 

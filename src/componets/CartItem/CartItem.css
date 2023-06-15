@@ -8,7 +8,10 @@
   /* flex-wrap: wrap; */
   align-items: center;
 width: 48%;
-min-width: 300px
+min-width: 300px;
+
+
+
 }
 
   
@@ -45,12 +48,19 @@ min-width: 300px
 
   }
 
-.hola2{
+.cartItemBtnEliminar{
   display: flex;
   justify-content: center;
   align-items: center;
 
 }
+
+.cartItemBold{
+font-weight: bold;
+}
+
+
+
 
 /* 
 .contenedorCartItem {
