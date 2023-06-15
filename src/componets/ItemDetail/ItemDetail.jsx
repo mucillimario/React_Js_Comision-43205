@@ -58,14 +58,35 @@ const ItemDetail = ({ id, sku, nombre, precio, img, stock, detalle }) => {
           <h className="detalleDetalle">{detalle} </h>
           <h3 className="sku_stockDetalle">Sku: {sku} </h3>
 
+
           {agregarCantidad > 0 ? (<Link className="btnInformativo btnTerminar" to="/cart"> 
-          {/* <button className="flechaVolver" onClick={ArrowBackSeguirComprando}>
-              <p>Seguir comprando</p>
-            </button>  */}
-            Terminar Compra 
-            </Link>)
+<i className="bi bi-bag-plus"></i>
+            Terminar Compra </Link>)
             : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)}
-          <br />
+
+
+<div className="itemDetailBotones">
+
+
+{/* <button
+                    className="btnAgregarCarro btnInformativo" onClick={() => funcionAgregar(contador)}>
+                    
+                </button>
+
+ */}
+
+  
+
+(<button className="" onClick={ArrowBackNavegador}>
+<i className="bi bi-bag-plus"></i> Quiero otros productos
+            </button>)
+
+
+</div>
+
+
+
+
           {/* <a href="/"> Quiero ver otros productos, no quiero este </a>
           <a href="/"> volver a la categoria </a> */}
 

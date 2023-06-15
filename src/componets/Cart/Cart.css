@@ -1,11 +1,13 @@
 .contenedorCartDetalle {
-    margin: 3rem;
-    background-color: #7d2424;
+    margin: 2rem;
+    background-color: var(--colorFondoCard);
     border-radius: 10px;
     padding: 2rem 1.5rem 2rem 1.5rem;
     box-shadow: 1rem 1rem 1rem rgb(60, 60, 60);
     display: flex;
+    justify-content: space-between;
 }
+
 
 
 .noHayProductos{
@@ -19,10 +21,21 @@
     flex-wrap: wrap;
     align-items: s;
     justify-content: space-around;
-    background-color: rgb(185, 199, 58);
-    width: 80%;
+    /* background-color: rgb(210 215 171); */
+    width: 89%
+
 }
 
 .carritoTotal{
-    background-color: rgb(104, 104, 104);
+    min-width: 180px;
+    /* background-color: rgb(104, 104, 104); */
+    /* display: flex; */
+    /* flex-direction: column; */
    }
+
+
+
+.carritoTotalBotones{
+    display: flex;
+    flex-direction: column; 
+}

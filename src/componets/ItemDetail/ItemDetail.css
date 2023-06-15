@@ -1,5 +1,5 @@
 .contenedorItemDetalle {
-    margin: 3rem;
+    margin: 2rem;
     display: flex;
     justify-content: center;
     background-color: #fafafa;
@@ -67,4 +67,11 @@ button {
 
 .btnTerminar{
 padding: 1rem 2rem;
+}
+
+
+.itemDetailBotones{
+    margin-top: 2rem;
+    background-color: rgb(206, 204, 219);
+
 }

@@ -15,11 +15,25 @@ const CartItem = ({ item, cantidad }) => {
           <div className="hola">
           <h4> {item.nombre} </h4>
           <p>Cantidad: {cantidad} </p>
-          <p>Precio: {item.precio} </p>
+          <p>Precio: $ {item.precio} </p>
+          <p>SubTotal: $ {item.precio * cantidad} </p>
           </div>
 
 <div className="hola2">
-<button className="miBtn" onClick={() => eliminarProducto(item.id)}> Eliminar </button>
+<button className="miBtn" onClick={() => eliminarProducto(item.id)}>              <i class="bi bi-x-square-fill"></i>  </button>
+                   
+{/* <i class="bi bi-cart3" ></i>
+        <i class="bi bi-arrow-left-circle-fill"></i>
+        <i class="bi bi-arrow-left-circle"></i>
+
+        <i class="bi bi-trash3"></i>
+        <i class="bi bi-trash3-fill"></i>
+        <i class="bi bi-bag-plus"></i>
+        
+
+        <i class="bi bi-check2-circle"></i>
+        <i class="bi bi-check-circle"></i>
+        <i class="bi bi-check-circle-fill"></i> */}
 </div>
         
           </div>

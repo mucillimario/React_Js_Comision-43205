@@ -20,20 +20,26 @@ const Cart = () => {
         <div className='contenedorCartDetalle'>
             <div className="hayProductos">
                 {carrito.map(producto => <CartItem key={producto.id} {...producto} />)}
-                {carrito.map(producto => <CartItem key={producto.id} {...producto} />)}
-                {carrito.map(producto => <CartItem key={producto.id} {...producto} />)}
-                {carrito.map(producto => <CartItem key={producto.id} {...producto} />)}
-                {carrito.map(producto => <CartItem key={producto.id} {...producto} />)}
-                {carrito.map(producto => <CartItem key={producto.id} {...producto} />)}
-                
+
             </div>
-            
+
             <div className="carritoTotal">
-<h3>Total: ${total} </h3>
-<h3>Cantidad total: {cantidadTotal} </h3>
-<button onClick={() => vaciarCarrito()}> Vaciar carrito </button>
-<Link to='/checkout'> Finalizar Compra </Link>
-</div>
+                <h3>Total: ${total} </h3>
+                <h3>Cantidad total: {cantidadTotal} </h3>
+
+                <div className="carritoTotalBotones">
+                <Link to='/checkout'>  <button>
+                <i class="bi bi-check-lg"></i> Finalizar Compra
+                
+                    </button>       </Link>
+
+                <button onClick={() => vaciarCarrito()}>                   <i class="bi bi-trash3"></i> Vaciar carrito </button>
+            </div>
+
+            </div>
+
+
+
         </div>
 
 
