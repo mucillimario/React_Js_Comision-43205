@@ -1,5 +1,3 @@
-
-
 .cardProducto {
     background-color: var(--colorFondoCard);
     border-radius: 10px;
@@ -74,5 +72,18 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+
+}
+
+
+@media screen and (max-width: 543px) {
+
+    .cardProducto {
+        background-color: rgb(189, 210, 28);
+        width: 70%;
+
+    }
+
+
 
 }
