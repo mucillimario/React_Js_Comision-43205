@@ -4,7 +4,11 @@ import { db_firebase } from '../../services/config';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import './Checkout.css'
 
+// Funcion que formatea numero a moneda.
 
+function formatoMoneda(moneda) {
+    return '$ ' + moneda.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+  }
 
 const Checkout = () => {
     const { carrito, vaciarCarrito } = useContext(CarritoContext);
@@ -59,7 +63,7 @@ const Checkout = () => {
             })
             .catch(error => {
                 console.error("Error al crear la orden.", error);
-                setError("Se produjo un error al crear la orden, vuelva prontus");
+                setError("Se produjo un error al crear la orden,");
             })
 
         setNombre("");
@@ -79,20 +83,32 @@ const Checkout = () => {
         <div className="cardCheckout">
 
             <div className="checkoutDetallesCompra">
-                <h2>Detalle de tasdadasdau compra</h2>,
+                <h2>Detalle de compra</h2>
                 {carrito.map(producto => (
                     <div key={producto.item.id}>
-                        <p>
-                            {producto.item.nombre} x {producto.cantidad}
-                        </p>
-                        <p> Precio $: {producto.item.precio} </p>
+                        <div className="detalleCompra">
+                        <div className="detalleCompra_1"> 
+                        <h4 className="cartItemBold esp1" > {producto.item.nombre} </h4>
+                        <h4 className="esp2" >Precio unitario: {formatoMoneda(producto.item.precio)} </h4>
+                          </div>
+                        <div className="detalleCompra_2">
+                        <h4>Cantidad: {producto.cantidad} </h4>
+
+<h4 className="cartItemBold">SubTotal: {formatoMoneda(producto.item.precio * producto.cantidad)}</h4>
+                        </div>
+
+   
+          </div>
+                        
+                        
+                        
                         <hr />
                     </div>
                 ))}
 
 {
                     ordenId && (
-                        <strong>¡Gracias por tu compra! Tu número de Orden es {ordenId} </strong>
+                        <h3>¡Gracias por tu compra! Tu número de Orden es {ordenId} </h3>
                     )
                 }
 
@@ -100,7 +116,7 @@ const Checkout = () => {
             </div>
             <div className="checkoutFormulario">
 
-            <h2>Datos del comprador</h2>,
+            <h2>Datos del comprador</h2>
 
                 <form onSubmit={manejadorFormulario} className="formulario">
 

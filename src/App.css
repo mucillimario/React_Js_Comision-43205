@@ -18,8 +18,8 @@ font-family: 'PT Sans Caption', sans-serif;
   --colorBtnEstiloAllHover: #081586;
   --colorBtnAtencion: #6c0303;
   --colorBtnAtencionHover: rgb(221, 27, 27);
-  --colorBtnFinCompra: rgb(122, 228, 122);
-  --colorBtnFinCompraHover: rgb(19, 111, 19);
+  --colorBtnFinCompra: rgb(40, 49, 155);
+  --colorBtnFinCompraHover: rgb(9, 74, 9);
  
 }
 
@@ -91,7 +91,7 @@ border: 2px solid var(--colorBtnEstiloAll);
 
 .btnFinCompra {
   background-color: var(--colorBtnFinCompra);
-  width: 100%;
+  width: 30%;
     color: #fafafa;
   font-size: 1.25rem;
   text-decoration: none;
