@@ -1,12 +1,4 @@
-:root {
-    --colorFondoCard: #fafafa;
-    --colorTexto: #1f1f1f;
-    --colorPrecioViejo: #c61e1e;
-    --colorPrecioDescuento: green;
-    --colorbtnEstiloAll: #0b55bc;
-    --colorbtnEstiloAllHover: #081586;
 
-}
 
 .cardProducto {
     background-color: var(--colorFondoCard);

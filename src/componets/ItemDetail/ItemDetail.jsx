@@ -37,9 +37,7 @@ const ItemDetail = ({ id, sku, nombre, precio, img, stock, detalle }) => {
     navigate(-1)
   }
 
-  const ArrowBackSeguirComprando = () => {
-    navigate(-0)
-  }
+
   return (
 
     <div className='contenedorItemDetalle'>
@@ -58,7 +56,7 @@ const ItemDetail = ({ id, sku, nombre, precio, img, stock, detalle }) => {
           <h className="detalleDetalle">{detalle} </h>
           <h3 className="sku_stockDetalle">Sku: {sku} </h3>
 
-<div className="Terminar">
+<div className="btnTerminar">
 {agregarCantidad > 0 ? (<Link className="btnEstiloAll" to="/cart"> 
 <i className="bi bi-bag-plus"></i>
             Terminar Compra </Link>)
@@ -72,7 +70,7 @@ const ItemDetail = ({ id, sku, nombre, precio, img, stock, detalle }) => {
 
   
 
-<button className="btnEstiloAll" onClick={ArrowBackNavegador}>
+<button className="btnSecundario" onClick={ArrowBackNavegador}>
 <i className="bi bi-eye"></i> Quiero otros productos
             </button>
 

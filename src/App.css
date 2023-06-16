@@ -6,22 +6,23 @@
 font-family: 'PT Sans Caption', sans-serif;
 }
 
-
-.btnEstiloAll {
-  background-color: var(--colorbtnEstiloAll);
-  width: 75%;
-  
-  color: #fafafa;
-  font-size: 1.25rem;
-  text-decoration: none;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* COLORES */
 
 
+:root {
+  --colorFondoCard: #fafafa;
+  --colorTexto: #1f1f1f;
+  --colorPrecioViejo: #c61e1e;
+  --colorPrecioDescuento: green;
+  --colorbtnEstiloAll: #0b55bc;
+  --colorbtnEstiloAllHover: #081586;
+  --colorbtnAtencion: #6c0303;
+  --colorbtnAtencionHover: rgb(221, 27, 27);
+ 
 }
 
+
+/* BOTONES */
 
 button {
   background-color: rgba(0, 0, 0, 0);
@@ -29,13 +30,66 @@ button {
   border: none;
 }
 
+.btnEstiloAll {
+  background-color: var(--colorbtnEstiloAll);
+  width: 75%;
+    color: #fafafa;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .btnEstiloAll:hover {
   background-color: var(--colorbtnEstiloAllHover);
   color: #fafafa;
-  font-size: 1.25rem;
   text-decoration: none;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
+
+
+.btnEstiloAtencion {
+  background-color: var(--colorbtnAtencion);
+  width: 75%;
+    color: #fafafa;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnEstiloAtencion:hover {
+  background-color: var(--colorbtnAtencionHover);
+  color: #fafafa;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btnSecundario {
+border: 2px solid var(--colorbtnEstiloAll);
+  width: 75%;
+    color: var(--colorbtnEstiloAll);
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnSecundario:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
 
 

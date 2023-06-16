@@ -4,33 +4,36 @@
     justify-content: center;
 }
 
-.btnContadores {
-    background-color: rgba(0, 0, 0, 0);
+/* .btnContadores {
+    box-shadow: 1px;
     border: none;
 
-}
+} */
 
 .bi-dash-square,
 .bi-plus-square {
     margin: 1rem;
+    color: var(--colorbtnEstiloAll)
 }
 
 .bi-dash-square:hover,
 .bi-plus-square:hover {
-    color: var(--colorbtnEstiloAllHover)
+    color: var(--colorbtnEstiloAllHover);
+
 }
 
 
 .div_agregar {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 0rem 4rem;
 }
 
 .btnAgregarCarro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
+  height: 28px;
+  width: 280px;
+  
 }
 
 .bi-bag-plus {

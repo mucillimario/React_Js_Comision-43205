@@ -30,10 +30,13 @@
 
 }
 
-.Terminar{
+.btnTerminar{
     display: flex;
     justify-content: center;
+    /* justify-content: space-between; */
+    padding: 0rem 15rem;
 }
+
 
 
 .nombreDetalle {
@@ -54,7 +57,7 @@
 }
 
 .precioDetalle {
-    color: var(--colorPrecioDescuento);
+    color: var(--colorTexto);
     padding: 2.8rem;
     font-size: 3rem;
     text-align: center;
@@ -70,7 +73,7 @@
 .bi-eye{
 font-size: 2rem;
     padding-right: 1rem;
-    color: antiquewhite;
+    color: var(--colorbtnEstiloAll);
 }
 
 .itemDetailBotones{
