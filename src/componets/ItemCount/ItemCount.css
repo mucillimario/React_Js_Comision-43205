@@ -13,12 +13,12 @@
 .bi-dash-square,
 .bi-plus-square {
     margin: 1rem;
-    color: var(--colorbtnEstiloAll)
+    color: var(--colorBtnEstiloAll)
 }
 
 .bi-dash-square:hover,
 .bi-plus-square:hover {
-    color: var(--colorbtnEstiloAllHover);
+    color: var(--colorBtnEstiloAllHover);
 
 }
 

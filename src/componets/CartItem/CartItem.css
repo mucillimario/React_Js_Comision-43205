@@ -52,15 +52,15 @@ min-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-color: var(--colorbtnAtencion);
+color: var(--colorBtnAtencion);
 }
 
 .bi-x-square{
-color: var(--colorbtnAtencion);
+color: var(--colorBtnAtencion);
 }
 
 .bi-x-square:hover{
-  color: var(--colorbtnAtencionHover
+  color: var(--colorBtnAtencionHover
   );
   }
   

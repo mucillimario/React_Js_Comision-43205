@@ -14,10 +14,12 @@ font-family: 'PT Sans Caption', sans-serif;
   --colorTexto: #1f1f1f;
   --colorPrecioViejo: #c61e1e;
   --colorPrecioDescuento: green;
-  --colorbtnEstiloAll: #0b55bc;
-  --colorbtnEstiloAllHover: #081586;
-  --colorbtnAtencion: #6c0303;
-  --colorbtnAtencionHover: rgb(221, 27, 27);
+  --colorBtnEstiloAll: #0b55bc;
+  --colorBtnEstiloAllHover: #081586;
+  --colorBtnAtencion: #6c0303;
+  --colorBtnAtencionHover: rgb(221, 27, 27);
+  --colorBtnFinCompra: rgb(122, 228, 122);
+  --colorBtnFinCompraHover: rgb(19, 111, 19);
  
 }
 
@@ -31,7 +33,7 @@ button {
 }
 
 .btnEstiloAll {
-  background-color: var(--colorbtnEstiloAll);
+  background-color: var(--colorBtnEstiloAll);
   width: 75%;
     color: #fafafa;
   font-size: 1.25rem;
@@ -44,7 +46,7 @@ button {
 
 
 .btnEstiloAll:hover {
-  background-color: var(--colorbtnEstiloAllHover);
+  background-color: var(--colorBtnEstiloAllHover);
   color: #fafafa;
   text-decoration: none;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
@@ -52,7 +54,7 @@ button {
 
 
 .btnEstiloAtencion {
-  background-color: var(--colorbtnAtencion);
+  background-color: var(--colorBtnAtencion);
   width: 75%;
     color: #fafafa;
   font-size: 1.25rem;
@@ -64,16 +66,16 @@ button {
 }
 
 .btnEstiloAtencion:hover {
-  background-color: var(--colorbtnAtencionHover);
+  background-color: var(--colorBtnAtencionHover);
   color: #fafafa;
   text-decoration: none;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .btnSecundario {
-border: 2px solid var(--colorbtnEstiloAll);
+border: 2px solid var(--colorBtnEstiloAll);
   width: 75%;
-    color: var(--colorbtnEstiloAll);
+    color: var(--colorBtnEstiloAll);
   font-size: 1.25rem;
   text-decoration: none;
   border-radius: 1rem;
@@ -87,7 +89,26 @@ border: 2px solid var(--colorbtnEstiloAll);
 }
 
 
-
+.btnFinCompra {
+  background-color: var(--colorBtnFinCompra);
+  width: 100%;
+    color: #fafafa;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .btnFinCompra:hover {
+    background-color: var(--colorBtnFinCompraHover);
+    color: #fafafa;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  
 
 
 

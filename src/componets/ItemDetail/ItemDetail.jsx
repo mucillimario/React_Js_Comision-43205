@@ -8,12 +8,14 @@ import { CarritoContext } from '../../context/CarritoContext'
 //Importamos el useContext: 
 import { useContext } from 'react';
 
-// navegecion hacia atras
+// Funcion que formatea numero a moneda.
+
+function formatoMoneda(moneda) {
+  return '$ ' + moneda.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+}
 
 
-
-
-const ItemDetail = ({ id, sku, nombre, precio, img, stock, detalle }) => {
+const ItemDetail = ({ id, sku, nombre, precio = 0, img, stock, detalle }) => {
 
   //1) Creamos un estado con la cantidad de productos agregados. 
   const [agregarCantidad, setAgregarCantidad] = useState(0);
@@ -52,7 +54,7 @@ const ItemDetail = ({ id, sku, nombre, precio, img, stock, detalle }) => {
           <h2 className="nombreDetalle"> {nombre} </h2>
 
           <p className="sku_stockDetalle">Disponibles: {stock} </p>
-          <h3 className="precioDetalle">$: {precio} </h3>
+          <h3 className="precioDetalle">{formatoMoneda(precio)} </h3>
           <h className="detalleDetalle">{detalle} </h>
           <h3 className="sku_stockDetalle">Sku: {sku} </h3>
 

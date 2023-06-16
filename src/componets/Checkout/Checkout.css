@@ -1,3 +1,31 @@
+.cardCheckout {
+    background-color: var(--colorFondoCard);
+    border-radius: 10px;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    margin: 2rem;
+    display: flex;
+    box-shadow: 1rem 1rem 1rem rgb(60, 60, 60);
+}
+
+
+.checkoutDetallesCompra{
+    background-color: rgb(24, 176, 52);
+    width: 50%;
+}
+
+
+.checkoutFormulario{
+    background-color: rgb(39, 92, 141);
+    width: 50%
+    ;
+}
+
+
+
+
+
+
+
 .formulario {
     max-width: 600px;
     margin: 0 auto;

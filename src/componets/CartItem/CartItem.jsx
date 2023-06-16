@@ -2,6 +2,13 @@ import { useContext } from "react"
 import { CarritoContext } from "../../context/CarritoContext"
 import './CartItem.css'
 
+// Funcion que formatea numero a moneda.
+function formatoMoneda(moneda) {
+  return '$ ' + moneda.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+}
+
+
+
 const CartItem = ({ item, cantidad }) => {
   const { eliminarProducto } = useContext(CarritoContext);
   return (
@@ -15,8 +22,8 @@ const CartItem = ({ item, cantidad }) => {
           <div>
           <h1 className="cartItemBold" > {item.nombre} </h1>
           <h4>Cantidad: {cantidad} </h4>
-          <h4>Precio: $ {item.precio} </h4>
-          <h4 className="cartItemBold">SubTotal: $ {item.precio * cantidad} </h4>
+          <h4>Precio: {formatoMoneda(item.precio)} </h4>
+          <h4 className="cartItemBold">SubTotal: {formatoMoneda(item.precio * cantidad)}</h4>
           </div>
 
 <div className="cartItemBtnEliminar">
