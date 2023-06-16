@@ -16,7 +16,8 @@
 
 .checkoutFormulario{
     /* background-color: rgb(39, 92, 141); */
-    width: 50%
+    width: 50%;
+
     ;
 }
 
@@ -29,15 +30,6 @@
 }
 
 
-
-
-
-
-
-.formulario {
-    margin: 0 auto;
-}
-
 .form-group {
     display: flex;
     flex-direction: column;
@@ -45,8 +37,14 @@
     margin: 0 1rem;
 }
 
-label {
+.checkoutFormBtnFinal{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
 
+label {
     margin-bottom: 0.5rem;
 }
 
@@ -71,5 +69,24 @@ h2, h3 {
     font-size: 2rem;
     border: 1px solid black;
     border-radius: 5px;
+
+}
+
+.btnFinCompra{
+    width: 50%;
+height: 28px;}
+
+
+.checkoutMsjExito{
+    background-color: rgb(226, 188, 63);
+    border-radius: 30px;
+    margin-top: 5rem;
+    padding: 3rem;
+
+}
+
+.checkoutMsjExito h3{
+margin: 1rem;
+
 
 }

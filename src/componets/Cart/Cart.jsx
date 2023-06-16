@@ -4,6 +4,12 @@ import { Link } from "react-router-dom"
 import CartItem from "../CartItem/CartItem"
 import './Cart.css'
 
+// Funcion que formatea numero a moneda.
+
+function formatoMoneda(moneda) {
+    return '$ ' + moneda.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+}
+
 
 const Cart = () => {
     const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext);
@@ -11,8 +17,8 @@ const Cart = () => {
     if (cantidadTotal === 0) {
         return (
             <div className='contenedorCartDetalle noHayProductos'>
-                <div><h2> No hay productos cargados en este carrito</h2></div>
-                <div className="btnEstiloAll"><Link to='/'> Ver Productos </Link></div>
+                <div><h2> No cargaste ningún producto</h2></div>
+                <div className="btnEstiloAll btnCarroVacio"><Link to='/'> Ver Productos </Link></div>
             </div>
         )
     }
@@ -28,7 +34,7 @@ const Cart = () => {
             <div className="carritoTotal">
 
                 <h3>Items cargados: {cantidadTotal} </h3>
-                <h3 className="cartItemBold">Total: ${total} </h3>
+                <h3 className="cartItemBold">Total:{formatoMoneda(total)} </h3>
 
 
                 <div className="carritoTotalBotones">

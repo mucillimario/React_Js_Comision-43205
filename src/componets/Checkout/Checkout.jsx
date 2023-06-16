@@ -8,7 +8,7 @@ import './Checkout.css'
 
 function formatoMoneda(moneda) {
     return '$ ' + moneda.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
-  }
+}
 
 const Checkout = () => {
     const { carrito, vaciarCarrito } = useContext(CarritoContext);
@@ -87,28 +87,32 @@ const Checkout = () => {
                 {carrito.map(producto => (
                     <div key={producto.item.id}>
                         <div className="detalleCompra">
-                        <div className="detalleCompra_1"> 
-                        <h4 className="cartItemBold esp1" > {producto.item.nombre} </h4>
-                        <h4 className="esp2" >Precio unitario: {formatoMoneda(producto.item.precio)} </h4>
-                          </div>
-                        <div className="detalleCompra_2">
-                        <h4>Cantidad: {producto.cantidad} </h4>
+                            <div className="detalleCompra_1">
+                                <h4 className="cartItemBold esp1" > {producto.item.nombre} </h4>
+                                <h4 className="esp2" >Precio unitario: {formatoMoneda(producto.item.precio)} </h4>
+                            </div>
+                            <div className="detalleCompra_2">
+                                <h4>Cantidad: {producto.cantidad} </h4>
 
-<h4 className="cartItemBold">SubTotal: {formatoMoneda(producto.item.precio * producto.cantidad)}</h4>
+                                <h4 className="cartItemBold">SubTotal: {formatoMoneda(producto.item.precio * producto.cantidad)}</h4>
+                            </div>
+
+
                         </div>
 
-   
-          </div>
-                        
-                        
-                        
+
+
                         <hr />
                     </div>
                 ))}
 
-{
+                {
                     ordenId && (
-                        <h3>¡Gracias por tu compra! Tu número de Orden es {ordenId} </h3>
+                        <div className="checkoutMsjExito">
+                            <h3>¡Gracias por tu compra!  </h3>
+                            <h3>Tu número de Orden es <strong>{ordenId}</strong>  </h3>
+                        </div>
+
                     )
                 }
 
@@ -116,7 +120,7 @@ const Checkout = () => {
             </div>
             <div className="checkoutFormulario">
 
-            <h2>Datos del comprador</h2>
+                <h2>Datos del comprador</h2>
 
                 <form onSubmit={manejadorFormulario} className="formulario">
 
@@ -144,12 +148,16 @@ const Checkout = () => {
                         <label htmlFor=""> Email Confirmación </label>
                         <input type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)} />
                     </div>
+                    <div className="checkoutFormBtnFinal">
+                        {error && <p style={{ color: "red" }}> {error} </p>}
 
-                    {error && <p style={{ color: "red" }}> {error} </p>}
-                    <button className="btnFinCompra" type="submit"> Finalizar Compra </button>
+                        <button className="btnFinCompra" type="submit">   <i class="bi bi-check-lg"></i> Finalizar Compra  </button>
+
+
+                    </div>
 
                 </form>
-               
+
             </div>
         </div>
 
