@@ -12,7 +12,7 @@ const NavBar = () => {
         <NavLink to={`/categoria/2`} activeclassname="active" className="colorTextoNav">Arquitectura</NavLink>
         <NavLink to={`/categoria/3`} activeclassname="active" className="colorTextoNav">Mario Bross</NavLink>
       </Nav>
-        {/* <h5 class="tituloGreeting">Bienvenidos a la web de lego realizada en React Js</h5> */}
+
     </Navbar>
   );
 }

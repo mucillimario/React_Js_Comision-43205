@@ -96,12 +96,7 @@ const Checkout = () => {
 
                                 <h4 className="cartItemBold">SubTotal: {formatoMoneda(producto.item.precio * producto.cantidad)}</h4>
                             </div>
-
-
                         </div>
-
-
-
                         <hr />
                     </div>
                 ))}
@@ -112,7 +107,6 @@ const Checkout = () => {
                             <h3>¡Gracias por tu compra!  </h3>
                             <h3>Tu número de Orden es <strong>{ordenId}</strong>  </h3>
                         </div>
-
                     )
                 }
 
@@ -151,8 +145,9 @@ const Checkout = () => {
                     <div className="checkoutFormBtnFinal">
                         {error && <p style={{ color: "red" }}> {error} </p>}
 
-                        <button className="btnFinCompra" type="submit">   <i class="bi bi-check-lg"></i> Finalizar Compra  </button>
-
+                        <button className="btnFinCompra" type="submit">
+                            <i class="bi bi-check-lg"></i> Finalizar Compra
+                        </button>
 
                     </div>
 
@@ -165,60 +160,3 @@ const Checkout = () => {
 }
 
 export default Checkout
-
-
-
-
-// <div>
-// <h2>Detalle de tu compra</h2>
-// <form onSubmit={manejadorFormulario} className="formulario">
-// {carrito.map(producto => (
-// <div key={producto.item.id}>
-// <p>
-// {producto.item.nombre} x {producto.cantidad}
-// </p>
-// <p> Precio $: {producto.item.precio} </p>
-// <hr />
-// </div>
-// ))}
-// <hr />
-
-// <div className="form-group">
-// <label htmlFor=""> Nombre </label>
-// <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
-// </div>
-
-// <div className="form-group">
-// <label htmlFor=""> Apellido </label>
-// <input type="text" value={apellido} onChange={(e) => setApellido(e.target.value)} />
-// </div>
-
-// <div className="form-group">
-// <label htmlFor=""> Telefono </label>
-// <input type="text" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
-// </div>
-
-// <div className="form-group">
-// <label htmlFor=""> Email </label>
-// <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-// </div>
-
-// <div className="form-group">
-// <label htmlFor=""> Email Confirmación </label>
-// <input type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)} />
-// </div>
-
-// {error && <p style={{ color: "red" }}> {error} </p>}
-// <button type="submit"> Finalizar Compra </button>
-
-// </form>
-// {
-// ordenId && (
-// <strong>¡Gracias por tu compra! Tu número de Orden es {ordenId} </strong>
-// )
-// }
-// </div>
-// )
-// }
-
-// export default Checkout

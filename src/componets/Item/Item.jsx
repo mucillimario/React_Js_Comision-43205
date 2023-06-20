@@ -25,7 +25,6 @@ const Item = ({ id, sku, nombre,precioOFF, precio, img, stock }) => {
         <p className="precioOFF">{formatoMoneda(precioOFF)} </p>            
         <p className="off"> %25</p>
         </div>
-        {/* <p className="precio">$ {precio} </p> */}
         <p className="precio">{formatoMoneda(precio)} </p>
         
         <p className="sku_stock">Sku: {sku} </p>

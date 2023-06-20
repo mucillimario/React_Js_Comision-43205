@@ -8,6 +8,13 @@
     box-shadow: 1rem 1rem 1rem rgb(60, 60, 60);
 }
 
+.contenedorItemDetalleImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
 .volver_img {
     display: flex;
 }
@@ -80,4 +87,36 @@ font-size: 2rem;
     margin-top: 2rem;
     display: flex;
     justify-content: center;
+}
+
+
+
+@media screen and (max-width: 1265px) {
+
+    .contenedorItemDetalle {
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        background-color: #fba8a8;
+        border-radius: 10px;
+        padding: 2rem 1.5rem 2rem 1.5rem;
+        box-shadow: 1rem 1rem 1rem rgb(60, 60, 60);
+    }
+
+
+     /* .detalleImg {
+
+        object-fit: contain;
+    } 
+
+
+ */
+
+
+    
+
+
+
+
+
 }

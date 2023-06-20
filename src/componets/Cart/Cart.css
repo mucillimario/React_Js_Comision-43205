@@ -21,15 +21,11 @@
     flex-wrap: wrap;
     align-items: s;
     justify-content: space-around;
-    /* background-color: rgb(210 215 171); */
     width: 89%
 }
 
 .carritoTotal {
     min-width: 180px;
-    /* background-color: rgb(104, 104, 104); */
-    /* display: flex; */
-    /* flex-direction: column; */
 }
 
 .carritoTotalBotones {
@@ -49,23 +45,22 @@
 .btnVaciarCarro {
     margin: 1rem;
     width: 200px;
-
 }
 
-.btnCarroVacio{
-    color: #fff   ;
+.btnCarroVacio {
+    color: #fff;
     width: 300px;
     height: 28px;
     text-decoration: none;
 }
 
-.btnCarroVacio:hover{
-    color: #fff   ;
+.btnCarroVacio:hover {
+    color: #fff;
     width: 300px;
     height: 28px;
 }
 
-.btnCarroVacio a{
-    color: #fff   ;
+.btnCarroVacio a {
+    color: #fff;
     text-decoration: none;
-    }
+}

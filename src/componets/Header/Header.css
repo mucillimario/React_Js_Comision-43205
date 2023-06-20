@@ -1,15 +1,14 @@
-
-.navbar-expand-lg .navbar-nav .nav-link{
+.navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.logo{
+.logo {
     width: 7rem;
 }
 
 
-h6{
+h6 {
     font-size: 1.5rem;
     margin: 1rem;
 }

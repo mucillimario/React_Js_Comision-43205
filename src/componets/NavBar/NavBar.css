@@ -6,27 +6,27 @@
 
 .colorTextoNav {
     font-size: 1.5rem;
-    color:rgb(200, 200, 200);
+    color: rgb(200, 200, 200);
     cursor: pointer;
     border-bottom: .2rem solid transparent;
     text-decoration: none;
     height: 2.5rem;
     padding: 0 2rem 0 2rem;
-    }
-
-.colorTextoNav:hover{
-    font-weight: bold;
-    color:rgb(200, 200, 200);
-    border-bottom-color:rgb(200, 200, 200);
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
+.colorTextoNav:hover {
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+    border-bottom-color: rgb(200, 200, 200);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.active{
+.active {
     font-weight: bold;
-    color:rgb(200, 200, 200);
-    border-bottom-color:rgb(200, 200, 200);
+    color: rgb(200, 200, 200);
+    border-bottom-color: rgb(200, 200, 200);
 }

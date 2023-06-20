@@ -10,6 +10,7 @@ import './Header.css'
 const Header = () => {
   return (
     <Navbar bg="warning" expand="lg">
+
       <Container>
         <Navbar.Brand>
           <Link to={"/"}>
@@ -26,6 +27,7 @@ const Header = () => {
           <CartWidget />
         </Navbar.Collapse>
       </Container>
+      
     </Navbar>
   );
 }

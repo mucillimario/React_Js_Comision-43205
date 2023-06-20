@@ -47,7 +47,10 @@ const ItemDetail = ({ id, sku, nombre, precio = 0, img, stock, detalle }) => {
             <button className="flechaVolver" onClick={ArrowBackNavegador}>
               <i class="bi bi-arrow-left-circle"></i>
             </button>
+            <div className="contenedorItemDetalleImg">
             <img className="detalleImg" src={img} alt={nombre} />
+            </div>
+
       </div>
 
       <div className="detalleTexto">

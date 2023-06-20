@@ -41,3 +41,25 @@
     padding-right: 1rem;
     color: antiquewhite
 }
+
+@media screen and (max-width: 1265px) {
+
+    .div_contadores {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(198, 217, 217);
+    }
+        
+    .div_agregar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 4rem;
+        background-color: aqua;
+    }
+
+
+
+
+}

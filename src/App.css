@@ -35,13 +35,15 @@ button {
 .btnEstiloAll {
   background-color: var(--colorBtnEstiloAll);
   width: 75%;
-    color: #fafafa;
+  height: 28px;
+  color: #fafafa;
   font-size: 1.25rem;
   text-decoration: none;
   border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 
