@@ -40,8 +40,7 @@
 .btnTerminar{
     display: flex;
     justify-content: center;
-    /* justify-content: space-between; */
-    padding: 0rem 15rem;
+    margin-top: 2rem;;
 }
 
 
@@ -90,33 +89,27 @@ font-size: 2rem;
 }
 
 
-
 @media screen and (max-width: 1265px) {
 
     .contenedorItemDetalle {
-        margin: 2rem;
-        display: flex;
-        justify-content: center;
-        background-color: #fba8a8;
-        border-radius: 10px;
-        padding: 2rem 1.5rem 2rem 1.5rem;
-        box-shadow: 1rem 1rem 1rem rgb(60, 60, 60);
+    flex-direction: column;
+    align-items: center;}
+
+    .detalleTexto {
+        text-align: center;
+        width: 100%;
+        margin: 0rem 2rem;
     }
 
-
-     /* .detalleImg {
-
-        object-fit: contain;
-    } 
+}
 
 
- */
+@media screen and (max-width: 420px) {
 
-
-    
-
-
-
-
+    .btnSecundario, .btnEstiloAll{
+        width: 75%;
+}
 
 }
+
+    

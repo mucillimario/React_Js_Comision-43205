@@ -76,7 +76,7 @@ button {
 
 .btnSecundario {
 border: 2px solid var(--colorBtnEstiloAll);
-  width: 75%;
+  width: 50%;
     color: var(--colorBtnEstiloAll);
   font-size: 1.25rem;
   text-decoration: none;

@@ -8,6 +8,10 @@
   min-width: 300px;
 }
 
+.cartItemCompleto{
+  background-color: darkolivegreen;
+}
+
 .cartItemImg {
   display: flex;
   align-items: center;
@@ -29,7 +33,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0rem 1rem;
-  width: 100%
+  width: 100%;
 }
 
 .cartItemBtnEliminar {
@@ -49,4 +53,18 @@
 
 .cartItemBold {
   font-weight: bold;
+}
+
+
+@media screen and (max-width: 409px) {
+
+  .contenedorCartItem {
+    flex-direction: column;
+
+  }
+
+.img_cart {
+  width: auto;
+}
+
 }

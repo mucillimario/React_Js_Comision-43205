@@ -19,7 +19,6 @@
 .hayProductos {
     display: flex;
     flex-wrap: wrap;
-    align-items: s;
     justify-content: space-around;
     width: 89%
 }
@@ -63,4 +62,38 @@
 .btnCarroVacio a {
     color: #fff;
     text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 1636px) {
+
+    .contenedorCartDetalle {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .hayProductos {
+        width: 100%;
+
+    }
+
+    .carritoTotalBotones {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 488px) {
+
+    .carritoTotalBotones {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }

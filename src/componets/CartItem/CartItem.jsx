@@ -17,7 +17,7 @@ const CartItem = ({ item, cantidad }) => {
         <img className="img_cart" src={item.img} alt="" />
       </div>
       <div className="cartItemDatos">
-        
+
         <div>
           <h1 className="cartItemBold" > {item.nombre} </h1>
           <h4>Cantidad: {cantidad} </h4>
